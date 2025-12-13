@@ -1,0 +1,29 @@
+[package]
+name = "aoc2025"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { workspace = true }
+color-eyre = { version = "0.6.3" }
+duct = { workspace = true }
+eyre = { workspace = true }
+jiff = "0.2.16"
+ureq = { workspace = true }
+
+[workspace]
+members = ["day_*"]
+
+[workspace.dependencies]
+clap = { version = "4.5.21", features = ["derive"] }
+duct = "1.1.1"
+eyre = "0.6.12"
+itertools = "0.14.0"
+nalgebra = "0.34.1"
+num = "0.4.3"
+rayon = "1.8.0"
+regex = "1.11.1"
+strum = { version = "0.27.2", features = ["derive"] }
+tap = "1.0.1"
+ureq = "3.1.4"
+winnow = "0.7.14"
